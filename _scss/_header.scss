@@ -1,0 +1,39 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $color-blue-dark;
+    font-size: 1.5em;
+    padding: 0 8em;
+    
+    a {
+        color: $color-blue-dark;
+    }
+}
+
+.site-title-logo-group {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    height: 2.3em;
+    width: auto;
+}
+
+.site-title {
+    margin-left: 0.5em;
+    font-size: 2em;
+}
+
+.site-nav {
+    ul {
+        display: flex;
+    }
+
+    li:first-of-type {
+        margin-right: 1em;
+    }
+}
+

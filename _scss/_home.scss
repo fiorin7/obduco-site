@@ -1,0 +1,30 @@
+.hero-search {
+    height: 40em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+
+    }
+}
+
+
+
+.main-search {
+    width: 50%;
+    height: 5em;
+    background-color: white;
+    outline: none;
+    border: none;
+    // border-bottom: 0.3em solid $main-color-blue;
+    border-radius: 0.2em;
+    &:focus {
+        outline: blue;
+    }
+}
+

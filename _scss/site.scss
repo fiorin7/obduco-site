@@ -1,3 +1,6 @@
-p {
-    background-color: gray;
-} 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+@import 'variables';
+@import 'reset';
+@import 'typography';
+@import 'header';
+@import 'home'

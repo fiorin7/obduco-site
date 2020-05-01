@@ -1,2 +1,70 @@
-p {
-  background-color: gray; }
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  font: 15px/1.5 'PT Sans', sans-serif; }
+
+body, form, table, input, textarea, option, select, button {
+  font: inherit; }
+
+li {
+  display: block; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003b6d;
+  font-size: 1.5em;
+  padding: 0 8em; }
+  .site-header a {
+    color: #003b6d; }
+
+.site-title-logo-group {
+  display: flex;
+  align-items: center; }
+
+.site-logo {
+  height: 2.3em;
+  width: auto; }
+
+.site-title {
+  margin-left: 0.5em;
+  font-size: 2em; }
+
+.site-nav ul {
+  display: flex; }
+
+.site-nav li:first-of-type {
+  margin-right: 1em; }
+
+.hero-search {
+  height: 40em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-search {
+  width: 50%;
+  height: 5em;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.2em; }
+  .main-search:focus {
+    outline: blue; }
