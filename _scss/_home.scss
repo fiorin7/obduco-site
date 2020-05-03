@@ -1,30 +1,65 @@
 .hero-search {
-    height: 40em;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    &:after {
+    .main-title-description {
+        width: 50%;
+        margin-bottom: 2em;
+        .main-title {
+            font-size: 2.5em;
+        }
 
+        .main-desc {
+            font-size: 1.5em;
+        }
     }
 }
 
 
-
-.main-search {
+.main-search-group {
     width: 50%;
     height: 5em;
-    background-color: white;
-    outline: none;
-    border: none;
-    // border-bottom: 0.3em solid $main-color-blue;
-    border-radius: 0.2em;
-    &:focus {
-        outline: blue;
+    display: flex;
+    justify-content: space-between;
+
+    .main-search {
+        height: 100%;
+        width: 78%;
+        font-size: 2em;
+        padding: 0 0.5em;
+
+        background-color: white;
+        outline: none;
+        border: none;
+        // border-bottom: 0.3em solid $main-color-blue;
+        border-radius: 0.2em;
+        &:focus {
+            outline: blue;
+        }
+        &::placeholder {
+            font-size: 1em;
+            padding-left: 0.5em;
+        }
+    }
+
+    .main-search-button {
+        width: 20%;
+        height: 100%;
+        font-size: 1.7em;
+
+        background-color: $color-blue-dark;
+        color: white;
+
+        border: none;
+        border-radius: 0.2em;
     }
 }
+
 

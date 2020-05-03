@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 * {
   padding: 0;
   margin: 0; }
@@ -8,6 +9,9 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+body {
+  position: relative; }
 
 html {
   font: 15px/1.5 'PT Sans', sans-serif; }
@@ -26,9 +30,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #003b6d;
+  height: 3em;
   font-size: 1.5em;
-  padding: 0 8em; }
+  padding: 0 8em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #003b6d;
+  background-color: rgba(245, 245, 245, 0.7); }
   .site-header a {
     color: #003b6d; }
 
@@ -37,7 +46,7 @@ a {
   align-items: center; }
 
 .site-logo {
-  height: 2.3em;
+  height: 3em;
   width: auto; }
 
 .site-title {
@@ -50,21 +59,75 @@ a {
 .site-nav li:first-of-type {
   margin-right: 1em; }
 
+.site-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2em;
+  background-color: #003b6d;
+  display: flex;
+  align-items: center; }
+  .site-footer p {
+    text-align: right;
+    display: block;
+    width: 100%;
+    margin-right: 3em;
+    color: whitesmoke; }
+
 .hero-search {
-  height: 40em;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .hero-search .main-title-description {
+    width: 50%;
+    margin-bottom: 2em; }
+    .hero-search .main-title-description .main-title {
+      font-size: 2.5em; }
+    .hero-search .main-title-description .main-desc {
+      font-size: 1.5em; }
 
-.main-search {
+.main-search-group {
   width: 50%;
   height: 5em;
-  background-color: white;
-  outline: none;
-  border: none;
-  border-radius: 0.2em; }
-  .main-search:focus {
-    outline: blue; }
+  display: flex;
+  justify-content: space-between; }
+  .main-search-group .main-search {
+    height: 100%;
+    width: 78%;
+    font-size: 2em;
+    padding: 0 0.5em;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.2em; }
+    .main-search-group .main-search:focus {
+      outline: blue; }
+    .main-search-group .main-search::-webkit-input-placeholder {
+      font-size: 1em;
+      padding-left: 0.5em; }
+    .main-search-group .main-search::-moz-placeholder {
+      font-size: 1em;
+      padding-left: 0.5em; }
+    .main-search-group .main-search:-ms-input-placeholder {
+      font-size: 1em;
+      padding-left: 0.5em; }
+    .main-search-group .main-search::-ms-input-placeholder {
+      font-size: 1em;
+      padding-left: 0.5em; }
+    .main-search-group .main-search::placeholder {
+      font-size: 1em;
+      padding-left: 0.5em; }
+  .main-search-group .main-search-button {
+    width: 20%;
+    height: 100%;
+    font-size: 1.7em;
+    background-color: #003b6d;
+    color: white;
+    border: none;
+    border-radius: 0.2em; }
