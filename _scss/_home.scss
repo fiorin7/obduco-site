@@ -5,29 +5,41 @@
     background-size: cover;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     .main-title-description {
-        width: 50%;
+        width: 100%;
         margin-bottom: 2em;
+        text-align: left;
+        color: black;
         .main-title {
-            font-size: 2.5em;
+            font-size: 2.3em;
         }
 
         .main-desc {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
 }
 
+.hero-search-contents {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3em;
+}
+
 
 .main-search-group {
-    width: 50%;
-    height: 5em;
+    width: 100%;
+    height: 4.3em;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     .main-search {
         height: 100%;
@@ -38,8 +50,8 @@
         background-color: white;
         outline: none;
         border: none;
-        // border-bottom: 0.3em solid $main-color-blue;
         border-radius: 0.2em;
+
         &:focus {
             outline: blue;
         }
@@ -59,6 +71,31 @@
 
         border: none;
         border-radius: 0.2em;
+       
+    }
+}
+
+.main-suggestion-box {
+    background-color: white;
+    width: 39%;
+    position: absolute;
+    left: 0; top: 101%;
+    width: 78%;
+
+    border-radius: 0.3em;
+
+
+    p{
+        transition: background-color 0.1s ease, color 0.1s ease;
+
+
+        padding: 0.5em;
+        font-size: 1.2em;
+
+        &:hover {
+            background-color: $main-color-blue;
+            color: white;
+        }
     }
 }
 
