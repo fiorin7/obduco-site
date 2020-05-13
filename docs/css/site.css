@@ -41,9 +41,6 @@ a {
   height: 3em;
   font-size: 1.3em;
   padding: 0 20%;
-  position: absolute;
-  left: 0;
-  right: 0;
   color: #003b6d;
   background-color: rgba(245, 245, 245, 0.7); }
   .site-header a {
@@ -167,3 +164,51 @@ a {
     .main-suggestion-box p:hover {
       background-color: #6699cc;
       color: white; }
+
+.search-group-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.page-search-group {
+  width: 37%;
+  height: 3em;
+  margin: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .page-search-group .page-search {
+    height: 100%;
+    width: 78%;
+    padding: 0 0.5em;
+    background-color: white;
+    outline: none;
+    border: 0.1em solid rgba(0, 59, 109, 0.5);
+    border-radius: 0.2em; }
+    .page-search-group .page-search::-webkit-input-placeholder {
+      font-size: 1.3em;
+      padding-left: 0.5em; }
+    .page-search-group .page-search::-moz-placeholder {
+      font-size: 1.3em;
+      padding-left: 0.5em; }
+    .page-search-group .page-search:-ms-input-placeholder {
+      font-size: 1.3em;
+      padding-left: 0.5em; }
+    .page-search-group .page-search::-ms-input-placeholder {
+      font-size: 1.3em;
+      padding-left: 0.5em; }
+    .page-search-group .page-search::placeholder {
+      font-size: 1.3em;
+      padding-left: 0.5em; }
+  .page-search-group .page-search-button {
+    width: 20%;
+    height: 100%;
+    font-size: 1.3em;
+    background-color: #003b6d;
+    color: white;
+    border: none;
+    border-radius: 0.2em; }
+
+.form-recognition-suggestions {
+  min-height: 3em;
+  background-color: #6699cc; }

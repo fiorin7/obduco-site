@@ -12,7 +12,6 @@
     </script>
     <script>
         window.addEventListener('click', function(e) {
-            console.log('You clicked outside');
             var suggestions = document.getElementsByClassName("main-suggestion-box");
             suggestions[0].style.display = 'none';
         });
@@ -23,8 +22,8 @@
     <div class="site {% if page.title == 'Home' %}current-page-home{% endif %}" {% if page.title == 'Home' %}style="background-image: url('{{ site.baseurl }}/images/header-dict.jpg')"{% endif %}>
         <header class="site-header">
             <div class="site-title-logo-group">
-                <a href="{{ site.baseurl }}"><img class="site-logo" src="{{ site.baseurl }}/images/logo.svg" alt=""></a>
-                <a href="{{ site.baseurl }}" class="site-title">OBDUCO</a>
+                <a href="/{{ site.baseurl }}"><img class="site-logo" src="{{ site.baseurl }}/images/logo.svg" alt=""></a>
+                <a href="/{{ site.baseurl }}" class="site-title">OBDUCO</a>
             </div>
             <nav class="site-nav">
                 <ul>
