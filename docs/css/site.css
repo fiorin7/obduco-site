@@ -118,8 +118,6 @@ a {
     outline: none;
     border: none;
     border-radius: 0.2em; }
-    .main-search-group .main-search:focus {
-      outline: blue; }
     .main-search-group .main-search::-webkit-input-placeholder {
       font-size: 1em;
       padding-left: 0.5em; }
@@ -151,6 +149,7 @@ a {
   left: 0;
   top: 101%;
   width: 78%;
+  display: none;
   border-radius: 0.3em; }
   .main-suggestion-box p {
     transition: background-color 0.1s ease, color 0.1s ease;

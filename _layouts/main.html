@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <script>
+        function showSuggestions() {
+            var suggestions = document.getElementsByClassName("main-suggestion-box");
+            suggestions[0].style.display = 'block';
+        }
+    </script>
+    <script>
+        window.addEventListener('click', function(e) {
+            console.log('You clicked outside');
+            var suggestions = document.getElementsByClassName("main-suggestion-box");
+            suggestions[0].style.display = 'none';
+        });
+    </script>
     <title>Document</title>
 </head>
 <body>
