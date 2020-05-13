@@ -13,6 +13,14 @@ html {
 body {
   position: relative; }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.site-content {
+  flex: 1; }
+
 html {
   font: 13px/1.5 'PT Sans', sans-serif; }
 
@@ -61,10 +69,6 @@ a {
     margin-right: 1em; }
 
 .site-footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   height: 2em;
   background-color: #003b6d;
   display: flex;
@@ -76,13 +80,18 @@ a {
     margin-right: 3em;
     color: whitesmoke; }
 
-.hero-search {
-  height: 100vh;
+.current-page-home {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; }
+  .current-page-home .site-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.hero-search {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center; }
   .hero-search .main-title-description {
     width: 100%;

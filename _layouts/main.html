@@ -17,10 +17,10 @@
             suggestions[0].style.display = 'none';
         });
     </script>
-    <title>Document</title>
+    <title>OBDUCO</title>
 </head>
 <body>
-    <div class="site">
+    <div class="site {% if page.title == 'Home' %}current-page-home{% endif %}" {% if page.title == 'Home' %}style="background-image: url('{{ site.baseurl }}/images/header-dict.jpg')"{% endif %}>
         <header class="site-header">
             <div class="site-title-logo-group">
                 <a href="{{ site.baseurl }}"><img class="site-logo" src="{{ site.baseurl }}/images/logo.svg" alt=""></a>
@@ -33,7 +33,7 @@
                 </ul>
             </nav>
         </header>
-    {{ content }}
+    <div class="site-content">{{ content }}</div>
     <footer class="site-footer">
         <p>footer, ако искаме да слагаме нещо там</p>
     </footer>
