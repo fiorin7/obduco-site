@@ -242,3 +242,52 @@ a {
         margin-left: 0.7em;
         position: relative;
         top: 0.1em; }
+
+.exact-match-block {
+  margin-top: 2em;
+  padding: 0 5em; }
+  .exact-match-block .exact-title-container {
+    display: flex;
+    justify-content: center; }
+  .exact-match-block .exact-title {
+    display: inline-block;
+    font-size: 1.4em;
+    letter-spacing: 0.04em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1em; }
+    .exact-match-block .exact-title:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 102%;
+      height: 0.1em;
+      width: 92%;
+      left: 4%;
+      background-color: rgba(0, 0, 0, 0.815); }
+  .exact-match-block .exact-match {
+    width: 45em;
+    border-bottom: 0.2em solid black;
+    margin: 2em auto 3em;
+    padding: 1em 5em; }
+  .exact-match-block .match-header {
+    display: flex; }
+    .exact-match-block .match-header .match-lemma {
+      font-size: 1.2em;
+      padding-bottom: 0.7em;
+      font-weight: normal; }
+    .exact-match-block .match-header a {
+      margin-left: auto;
+      margin-right: 2em; }
+  .exact-match-block .matches-list {
+    margin-left: 2em; }
+  .exact-match-block .matches-list li {
+    width: 100%;
+    margin-bottom: 0.5em;
+    display: flex; }
+    .exact-match-block .matches-list li .match-example {
+      margin-right: 0.5em; }
+    .exact-match-block .matches-list li .match-translation {
+      display: inline-block;
+      margin-left: 0.5em;
+      color: #80634d; }

@@ -99,3 +99,72 @@
         }
     }
 }
+
+.exact-match-block {
+    margin-top: 2em;
+    padding: 0 5em;
+    .exact-title-container {
+        display: flex;
+        justify-content: center;
+    }
+    .exact-title {
+        display: inline-block;
+        font-size: 1.4em;
+        letter-spacing: 0.04em;
+        text-align: center;
+        position: relative;
+        margin-bottom: 1em;
+
+        &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 102%;
+            height: 0.1em;
+            width: 92%;
+            left: 4%;
+            background-color: rgba(0, 0, 0, 0.815);
+        }
+    }
+    .exact-match {
+        width: 45em;
+        border-bottom: 0.2em solid black;
+        margin: 2em auto 3em;
+        padding: 1em 5em;
+    }
+
+    .match-header {
+        display: flex;
+
+        .match-lemma {
+            font-size: 1.2em;
+            padding-bottom: 0.7em;
+            font-weight: normal;
+        }
+        
+        a {
+            margin-left: auto;
+            margin-right: 2em;
+        }
+    }
+
+    .matches-list {
+        margin-left: 2em;
+        // background-color: orange;
+    }
+    .matches-list li {
+        width: 100%;
+        margin-bottom: 0.5em;
+        display: flex;
+
+        .match-example {
+            margin-right: 0.5em;
+        }
+
+        .match-translation {
+            display: inline-block;
+            margin-left: 0.5em;
+            color: rgb(128, 99, 77);
+        }
+    }
+}
