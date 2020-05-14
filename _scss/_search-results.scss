@@ -46,4 +46,56 @@
 .form-recognition-suggestions {
     min-height: 3em;
     background-color: $main-color-blue;
+    padding: 2em 3em;
+
+    .form-suggestion {
+        width: 52%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 4.5em;
+        position: relative;
+        padding-bottom: 1em;
+        background-color: rgb(247, 245, 248);
+        margin-bottom: 3em;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.3em gray;
+
+        &:last-child {
+            margin-bottom: 0.5em;
+        }
+
+        .suggestion-lemma {
+            margin: 0 2em;
+            font-size: 1.2em;
+            
+        }
+
+        span {
+            padding: 0.7em 0.2em;
+            border-radius: 0.4em;
+            position: absolute;
+            bottom: -1.5em;
+            background-color: rgb(59, 47, 38);
+            color: whitesmoke;
+            min-width: 16em;
+            text-align: center;
+            font-size: 0.9em;
+
+
+            &:first-child {
+                left: -1.7em;
+            }
+            &:last-child {
+                right: -1.7em;
+            }
+
+            i {
+                margin-left: 0.7em;
+                position: relative;
+                top: 0.1em;
+            }
+        }
+    }
 }

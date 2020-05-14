@@ -99,7 +99,7 @@ a {
     .hero-search .main-title-description .main-title {
       font-size: 1.6em; }
     .hero-search .main-title-description .main-desc {
-      font-size: 1em; }
+      font-size: 0.9em; }
 
 .hero-search-contents {
   display: flex;
@@ -204,4 +204,41 @@ a {
 
 .form-recognition-suggestions {
   min-height: 3em;
-  background-color: #6699cc; }
+  background-color: #6699cc;
+  padding: 2em 3em; }
+  .form-recognition-suggestions .form-suggestion {
+    width: 52%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 4.5em;
+    position: relative;
+    padding-bottom: 1em;
+    background-color: #f7f5f8;
+    margin-bottom: 3em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.3em gray; }
+    .form-recognition-suggestions .form-suggestion:last-child {
+      margin-bottom: 0.5em; }
+    .form-recognition-suggestions .form-suggestion .suggestion-lemma {
+      margin: 0 2em;
+      font-size: 1.2em; }
+    .form-recognition-suggestions .form-suggestion span {
+      padding: 0.7em 0.2em;
+      border-radius: 0.4em;
+      position: absolute;
+      bottom: -1.5em;
+      background-color: #3b2f26;
+      color: whitesmoke;
+      min-width: 16em;
+      text-align: center;
+      font-size: 0.9em; }
+      .form-recognition-suggestions .form-suggestion span:first-child {
+        left: -1.7em; }
+      .form-recognition-suggestions .form-suggestion span:last-child {
+        right: -1.7em; }
+      .form-recognition-suggestions .form-suggestion span i {
+        margin-left: 0.7em;
+        position: relative;
+        top: 0.1em; }
