@@ -255,7 +255,7 @@ a {
     letter-spacing: 0.04em;
     text-align: center;
     position: relative;
-    margin-bottom: 1em; }
+    margin-bottom: 0.5em; }
     .exact-match-block .exact-title:after {
       display: block;
       content: "";
@@ -275,10 +275,28 @@ a {
     .exact-match-block .match-header .match-lemma {
       font-size: 1.2em;
       padding-bottom: 0.7em;
-      font-weight: normal; }
+      font-weight: normal;
+      position: relative; }
+      .exact-match-block .match-header .match-lemma:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 70%;
+        height: 0.1em;
+        width: 92%;
+        left: 4%;
+        background-color: #7e7571; }
     .exact-match-block .match-header a {
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
       margin-left: auto;
-      margin-right: 2em; }
+      margin-right: 2em;
+      display: flex;
+      align-items: center;
+      background-color: #3b2f26;
+      color: whitesmoke; }
+      .exact-match-block .match-header a i {
+        margin-left: 0.6em; }
   .exact-match-block .matches-list {
     margin-left: 2em; }
   .exact-match-block .matches-list li {
