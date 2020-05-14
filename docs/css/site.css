@@ -22,7 +22,7 @@ body {
   flex: 1; }
 
 html {
-  font: 13px/1.5 'PT Sans', sans-serif; }
+  font: 19px/1.5 'PT Sans', sans-serif; }
 
 body, form, table, input, textarea, option, select, button {
   font: inherit; }
@@ -38,8 +38,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3em;
-  font-size: 1.3em;
+  font-size: 0.9em;
   padding: 0 20%;
   color: #003b6d;
   background-color: rgba(245, 245, 245, 0.7); }
@@ -51,12 +50,14 @@ a {
   align-items: center; }
 
 .site-logo {
-  height: 2.5em;
-  width: auto; }
+  height: 2.4em;
+  width: auto;
+  display: flex;
+  align-items: center; }
 
 .site-title {
   margin-left: 0.5em;
-  font-size: 2em; }
+  font-size: 1.9em; }
 
 .site-nav {
   margin-right: 6em; }
@@ -66,15 +67,15 @@ a {
     margin-right: 1em; }
 
 .site-footer {
-  height: 2em;
+  padding: 0.3em 1.5em;
   background-color: #003b6d;
   display: flex;
   align-items: center; }
   .site-footer p {
+    font-size: 0.7em;
     text-align: right;
     display: block;
     width: 100%;
-    margin-right: 3em;
     color: whitesmoke; }
 
 .current-page-home {
@@ -92,13 +93,13 @@ a {
   justify-content: center; }
   .hero-search .main-title-description {
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     text-align: left;
     color: black; }
     .hero-search .main-title-description .main-title {
-      font-size: 2.3em; }
+      font-size: 1.6em; }
     .hero-search .main-title-description .main-desc {
-      font-size: 1.2em; }
+      font-size: 1em; }
 
 .hero-search-contents {
   display: flex;
@@ -111,46 +112,42 @@ a {
 
 .main-search-group {
   width: 100%;
-  height: 4.3em;
+  height: 3em;
   display: flex;
   justify-content: space-between;
   position: relative; }
   .main-search-group .main-search {
     height: 100%;
     width: 78%;
-    font-size: 2em;
+    font-size: 1.3em;
     padding: 0 0.5em;
     background-color: white;
     outline: none;
     border: none;
     border-radius: 0.2em; }
     .main-search-group .main-search::-webkit-input-placeholder {
-      font-size: 1em;
       padding-left: 0.5em; }
     .main-search-group .main-search::-moz-placeholder {
-      font-size: 1em;
       padding-left: 0.5em; }
     .main-search-group .main-search:-ms-input-placeholder {
-      font-size: 1em;
       padding-left: 0.5em; }
     .main-search-group .main-search::-ms-input-placeholder {
-      font-size: 1em;
       padding-left: 0.5em; }
     .main-search-group .main-search::placeholder {
-      font-size: 1em;
       padding-left: 0.5em; }
   .main-search-group .main-search-button {
     width: 20%;
     height: 100%;
-    font-size: 1.7em;
+    font-size: 1.2em;
+    letter-spacing: 0.07em;
     background-color: #003b6d;
-    color: white;
     border: none;
     border-radius: 0.2em; }
+    .main-search-group .main-search-button a {
+      color: white; }
 
 .main-suggestion-box {
   background-color: white;
-  width: 39%;
   position: absolute;
   left: 0;
   top: 101%;
@@ -159,8 +156,8 @@ a {
   border-radius: 0.3em; }
   .main-suggestion-box p {
     transition: background-color 0.1s ease, color 0.1s ease;
-    padding: 0.5em;
-    font-size: 1.2em; }
+    padding: 0.5em 0.8em;
+    font-size: 1.1em; }
     .main-suggestion-box p:hover {
       background-color: #6699cc;
       color: white; }
@@ -171,8 +168,8 @@ a {
   align-items: center; }
 
 .page-search-group {
-  width: 37%;
-  height: 3em;
+  width: 34%;
+  height: 2.2em;
   margin: 3em 0;
   display: flex;
   justify-content: space-between;
@@ -181,29 +178,25 @@ a {
     height: 100%;
     width: 78%;
     padding: 0 0.5em;
+    font-size: 1em;
     background-color: white;
     outline: none;
     border: 0.1em solid rgba(0, 59, 109, 0.5);
     border-radius: 0.2em; }
     .page-search-group .page-search::-webkit-input-placeholder {
-      font-size: 1.3em;
       padding-left: 0.5em; }
     .page-search-group .page-search::-moz-placeholder {
-      font-size: 1.3em;
       padding-left: 0.5em; }
     .page-search-group .page-search:-ms-input-placeholder {
-      font-size: 1.3em;
       padding-left: 0.5em; }
     .page-search-group .page-search::-ms-input-placeholder {
-      font-size: 1.3em;
       padding-left: 0.5em; }
     .page-search-group .page-search::placeholder {
-      font-size: 1.3em;
       padding-left: 0.5em; }
   .page-search-group .page-search-button {
     width: 20%;
     height: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
     background-color: #003b6d;
     color: white;
     border: none;
